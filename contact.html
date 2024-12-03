@@ -1,0 +1,65 @@
+<html>
+    <link rel="stylesheet" href="css/contact.css">
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo1.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="menu.html">menu</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+</header>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        
+        <form action="">
+            <h3>Your Infromation</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox"> 
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Number">
+            </div>
+            
+            <div class="container">
+                <a href="#" class="btn" onclick="openPopup()">submit</a>
+                <div class="popup" id="popup">
+                    <img src="E:\mine\images\t.png" >
+                    <h2>Thank You</h2>
+                    <p>Your Order is processing</p>
+                    <button type="button" onclick="closePopup()">ok</button>
+                </div>
+            </div>
+            <script>
+                let popup = document.getElementById("popup");
+    
+                function openPopup(){
+                    popup.classList.add("open-popup");
+                }
+                function closePopup(){
+                    popup.classList.remove("open-popup");
+                }
+            </script>
+        </form>
+
+    </div>
+
+</section>
+</html>
